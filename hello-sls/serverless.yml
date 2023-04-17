@@ -1,0 +1,15 @@
+service: hello-sls
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  region: sa-east-1
+  runtime: nodejs18.x
+
+functions:
+  hello:
+    handler: index.handler
+    events:
+      - http:
+          path: handler
+          method: get
