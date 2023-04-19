@@ -13,7 +13,6 @@ sls deploy
 #invocar aws
 sls invoke -f hello --log
 
-
 #invocar local
 sls invoke local -f hello --log
 
